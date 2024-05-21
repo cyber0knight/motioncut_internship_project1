@@ -138,6 +138,54 @@
   }
 
 /* -------------------------------------------------------------------------------------------------------------------- */
+.titleBox {
+    flex: 1;
+    height: 50vh;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .premium {
+    margin-top: 20%;
+  }
+  
+  .title {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+  
+  .searchBox {
+    margin-top: 20px;
+    margin-right: 10px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .searchBox select, .searchBox input {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  .results {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    color: black;
+    white-space: nowrap;
+  }
+  
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 .bikeImg{
     background-image: url("../images/bike1.jpg");
@@ -201,7 +249,7 @@
     .titleBox{
         flex: 1;
         height: 10%;
-        padding-left: 20px;
+        padding-left: 30px;
         display: flex;
         flex-direction: column;
         margin-bottom: 5px;
@@ -218,7 +266,7 @@
 
     .searchBox{
         margin-top: 10px;
-        width: 70%;
+        width: 90%;
         height: 55px;
     }
     .pricingTable .pricingContent{
@@ -255,6 +303,17 @@
 }
 
 @media (max-width: 570px){
+    .backgroundImage{
+        position: absolute;
+        margin-top: 65px;
+        bottom: 0;
+        top: 0;
+        width: 98%;
+        height: 88%;
+        z-index: 0;
+        opacity: 60%;
+        border-radius: 20px;
+    }
     header {
         padding: 10px 20px;
         box-shadow: 0 0 10px 0 rgba(25, 24, 24, 0.3);
@@ -265,7 +324,7 @@
         font-size: 17px;
     }
     .pricingTable .pricingContent{
-        margin-top: 10px;
+        margin-top: -10px;
         margin-bottom: 30px;
         margin-left: 10px;
         font-size: 14px;
@@ -275,7 +334,17 @@
         margin-top: 0px;
         margin-bottom: 5px;
     }
-      
+    .pricingSection{
+        width: 90%;
+        margin-top: -20%;
+        height: auto;
+        overflow: hidden;
+    }
+    .pricingSection2{
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+    }
     .pricingTable .unorderedList {
         margin-left: 15px;
         font-size: 12px;
@@ -289,4 +358,54 @@
         font-size: 12px;
         padding: 0px;
     }
+
+    .titleBox {
+        flex: 1;
+        height: 50vh;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .premium {
+        margin-top: 10%;
+      }
+      
+      .title {
+        margin-top: 10px;
+        font-size: 17px;
+      }
+      
+      .searchBox {
+        margin-top: 20px;
+        margin-right: 0px;
+        height: auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: black;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .searchBox select, .searchBox input {
+        margin: 2px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+      .searchBox input{
+        width: 70px;
+      }
+      .results {
+        margin-left: 5px;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        color: black;
+        white-space: nowrap;
+      }
+      
 }

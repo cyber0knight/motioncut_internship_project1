@@ -8,7 +8,7 @@ export default function PricingSection({ selectedCategory, setSelectedCategory }
         return (
           <>
             <h1>Sport Bikes</h1>
-            <h2>Price: 1000rs / day</h2>
+            {/* <h2>Price: 1000rs / day</h2> */}
             <ul className='unorderedList'>
               <li><h4>One helmet will be provided by us.</h4></li>
               <li><h4>Customers must bring additional helmets if needed.</h4></li>
@@ -23,7 +23,7 @@ export default function PricingSection({ selectedCategory, setSelectedCategory }
         return (
           <>
             <h1>Luxury Cars</h1>
-            <h2>Price: 5000rs / day</h2>
+            {/* <h2>Price: 5000rs / day</h2> */}
             <ul className='unorderedList'>
               <li><h4>Fuel included for the first 100 km.</h4></li>
               <li><h4>Optional driver service available upon request.</h4></li>
@@ -38,7 +38,7 @@ export default function PricingSection({ selectedCategory, setSelectedCategory }
         return (
           <>
             <h1>SUV</h1>
-            <h2>Price: 7000rs / day</h2>
+            {/* <h2>Price: 7000rs / day</h2> */}
             <ul className='unorderedList'>
               <li><h4>Spacious and comfortable for long journeys.</h4></li>
               <li><h4>Free GPS and advanced music system.</h4></li>
